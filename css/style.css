@@ -17,11 +17,10 @@ body {
   line-height: 1.6;
 }
 
-header {
-  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.85)), url('../images/inicio1.jpg') center top/cover no-repeat;
-  padding: 8rem 2rem 4rem;
-  text-align: center;
-  color: white;
+@media (max-width: 768px) {
+  header {
+    background-position: right center;
+  }
 }
 
 header h1 {
