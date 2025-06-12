@@ -1,11 +1,19 @@
 /* Estilos globales */
 @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Open+Sans&display=swap');
 
+:root {
+  --fondo-oscuro: #1b1b1b;
+  --texto-principal: #f7f4f1;
+  --texto-secundario: #e0d7cd;
+  --acento: #bfa675;
+  --sombra: #333333;
+}
+
 body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
-  background: linear-gradient(to bottom, #0f0f0f, #1a1a1a);
-  color: #f0f0f0;
+  background: linear-gradient(to bottom, var(--fondo-oscuro), #1a1a1a);
+  color: var(--texto-principal);
   line-height: 1.6;
 }
 
@@ -29,11 +37,15 @@ header nav {
 }
 
 header nav a {
-  color: white;
+  color: var(--texto-secundario);
   margin: 0 1rem;
   text-decoration: none;
   font-weight: bold;
   font-size: 1.1rem;
+}
+
+header nav a:hover {
+  color: var(--acento);
 }
 
 .portrait {
@@ -44,7 +56,7 @@ header nav a {
   margin: 1.5rem auto;
   display: block;
   filter: grayscale(100%) contrast(1.1);
-  border: 4px solid #fff;
+  border: 4px solid white;
 }
 
 section {
@@ -59,17 +71,18 @@ section {
 }
 
 #contacto {
-  background-color: #111;
+  background-color: var(--fondo-oscuro);
   text-align: center;
 }
 
-#contacto a {
-  color: white;
+#contacto a,
+#contacto a[href^="mailto"] {
+  color: var(--texto-principal);
   text-decoration: none;
 }
 
 h2 {
-  color: #d3f8e2;
+  color: var(--acento);
   font-size: 2rem;
   margin-bottom: 1.5rem;
   text-align: center;
@@ -85,11 +98,17 @@ h2 {
   display: inline-block;
   margin-top: 1.5rem;
   padding: 0.75rem 1.5rem;
-  background-color: #d3f8e2;
-  color: #000;
+  background-color: var(--acento);
+  color: var(--fondo-oscuro);
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-download:hover {
+  background-color: var(--texto-secundario);
+  color: #000;
 }
 
 footer {
