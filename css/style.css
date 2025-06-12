@@ -63,6 +63,11 @@ section {
   text-align: center;
 }
 
+#contacto a {
+  color: white;
+  text-decoration: none;
+}
+
 h2 {
   color: #d3f8e2;
   font-size: 2rem;
