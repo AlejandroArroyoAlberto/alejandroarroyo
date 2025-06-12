@@ -18,11 +18,8 @@ body {
 }
 
 header {
-  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.85)), url('../images/inicio1.jpg') right center/cover no-repeat;
-  background-position: right center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
+  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.85)), url('../images/inicio1.jpg') center top/cover no-repeat;
+
 
 header h1 {
   font-family: 'Caveat', cursive;
